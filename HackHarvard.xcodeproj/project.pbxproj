@@ -12,6 +12,9 @@
 		41F550D328FA5BDE001052C2 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 41F550D228FA5BDE001052C2 /* Experience.rcproject */; };
 		41F550D528FA5BDF001052C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F550D428FA5BDF001052C2 /* Assets.xcassets */; };
 		41F550D828FA5BDF001052C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F550D728FA5BDF001052C2 /* Preview Assets.xcassets */; };
+		41F550E928FB7B1B001052C2 /* jump2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41F550E628FB7B1B001052C2 /* jump2.usdz */; };
+		41F550EA28FB7B1B001052C2 /* jump1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41F550E728FB7B1B001052C2 /* jump1.usdz */; };
+		41F550EB28FB7B1B001052C2 /* nodding.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41F550E828FB7B1B001052C2 /* nodding.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		41F550D228FA5BDE001052C2 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		41F550D428FA5BDF001052C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41F550D728FA5BDF001052C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41F550E628FB7B1B001052C2 /* jump2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = jump2.usdz; sourceTree = "<group>"; };
+		41F550E728FB7B1B001052C2 /* jump1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = jump1.usdz; sourceTree = "<group>"; };
+		41F550E828FB7B1B001052C2 /* nodding.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = nodding.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				41F550D028FA5BDE001052C2 /* ContentView.swift */,
 				41F550D228FA5BDE001052C2 /* Experience.rcproject */,
 				41F550D428FA5BDF001052C2 /* Assets.xcassets */,
+				41F550E728FB7B1B001052C2 /* jump1.usdz */,
+				41F550E628FB7B1B001052C2 /* jump2.usdz */,
+				41F550E828FB7B1B001052C2 /* nodding.usdz */,
 				41F550D628FA5BDF001052C2 /* Preview Content */,
 			);
 			path = HackHarvard;
@@ -129,7 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F550D828FA5BDF001052C2 /* Preview Assets.xcassets in Resources */,
+				41F550E928FB7B1B001052C2 /* jump2.usdz in Resources */,
+				41F550EB28FB7B1B001052C2 /* nodding.usdz in Resources */,
 				41F550D528FA5BDF001052C2 /* Assets.xcassets in Resources */,
+				41F550EA28FB7B1B001052C2 /* jump1.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +293,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +325,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
