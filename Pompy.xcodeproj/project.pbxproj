@@ -14,6 +14,7 @@
 		41F550E928FB7B1B001052C2 /* jump2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41F550E628FB7B1B001052C2 /* jump2.usdz */; };
 		41F550EA28FB7B1B001052C2 /* jump1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41F550E728FB7B1B001052C2 /* jump1.usdz */; };
 		41F550EB28FB7B1B001052C2 /* nodding.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 41F550E828FB7B1B001052C2 /* nodding.usdz */; };
+		8F90218B28FB9B5700D8545F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F90218A28FB9B5600D8545F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		41F550E728FB7B1B001052C2 /* jump1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = jump1.usdz; sourceTree = "<group>"; };
 		41F550E828FB7B1B001052C2 /* nodding.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = nodding.usdz; sourceTree = "<group>"; };
 		8F90218728FB890C00D8545F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8F90218A28FB9B5600D8545F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		41F550D628FA5BDF001052C2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8F90218A28FB9B5600D8545F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				41F550E928FB7B1B001052C2 /* jump2.usdz in Resources */,
 				41F550EB28FB7B1B001052C2 /* nodding.usdz in Resources */,
+				8F90218B28FB9B5700D8545F /* Preview Assets.xcassets in Resources */,
 				41F550D528FA5BDF001052C2 /* Assets.xcassets in Resources */,
 				41F550EA28FB7B1B001052C2 /* jump1.usdz in Resources */,
 			);
