@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/brayton/Desktop/XCode Projects/Hackathons/HarvardHacks/HackHarvard/Pompy.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

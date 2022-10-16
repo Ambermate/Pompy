@@ -11,6 +11,7 @@ import ImageIO
 
 struct Home: View {
     var n = Int.random(in: 1...4)
+    @EnvironmentObject var controlModel: ViewControlModel
     var body: some View {
         ZStack {
             VStack {
@@ -25,26 +26,29 @@ struct Home: View {
                 GifImage("fluffy\(n)")
                 
             }
+            .onTapGesture {
+                controlModel.isShowingPompy = true
+            }
             
             VStack {
                 Spacer()
                 
                 HStack {
-                    Button(action: {}) {
+                    Button(action: {controlModel.isShowingLocation = true}) {
                         Image("location")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .FeauturesButton()
                     }
                     
-                    Button(action: {}) {
+                    Button(action: {controlModel.isShowingChat = true}) {
                         Image("chat")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .FeauturesButton()
                     }
                     
-                    Button(action: {}) {
+                    Button(action: {controlModel.isShowingEating = true}) {
                         Image("eating")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -52,14 +56,14 @@ struct Home: View {
                         
                     }
                     
-                    Button(action: {}) {
+                    Button(action: {controlModel.isShowingTree = true}) {
                         Image("tree")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .FeauturesButton()
                     }
                     
-                    Button(action: {}) {
+                    Button(action: {controlModel.isShowingRoadmap = true}) {
                         Image("roadmap")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -70,6 +74,78 @@ struct Home: View {
 
             }
 
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingChat, onDismiss: {}) {
+            Chat()
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingTree, onDismiss: {}) {
+            ZStack {
+                NatureView()
+                
+                VStack {
+                    Button(action: {controlModel.isShowingTree = false}) {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 40))
+                            .padding(.horizontal, 3)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .padding(.leading, 10)
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .cornerRadius(20)
+                    .tint(.black.opacity(1))
+                    .padding()
+                    .padding(.top, 10)
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingEating, onDismiss: {}) {
+            Camera()
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingRoadmap, onDismiss: {}) {
+            RoadMap()
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingLocation, onDismiss: {}) {
+            ZStack {
+                MapView()
+                
+                VStack {
+                    Button(action: {controlModel.isShowingLocation = false}) {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 40))
+                            .padding(.horizontal, 3)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .padding(.leading, 10)
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .cornerRadius(20)
+                    .tint(.black.opacity(1))
+                    .padding()
+                    .padding(.top, 40)
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingPompy, onDismiss: {}) {
+            ZStack {
+                BasicPompiView()
+                
+                VStack {
+                    Button(action: {controlModel.isShowingPompy = false}) {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 40))
+                            .padding(.horizontal, 3)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .padding(.leading, 10)
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .cornerRadius(20)
+                    .tint(.black.opacity(1))
+                    .padding()
+                    .padding(.top, 10)
+                }
+            }
         }
     }
 }

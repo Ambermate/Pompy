@@ -12,6 +12,7 @@ struct Chat: View {
     @Environment(\.managedObjectContext) private var viewContext
     //@FetchRequest(sortDescriptors: [NSSortDescriptor(keypath: \Todo.created)])
     @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var controlModel: ViewControlModel
     @State private var recording = false
     @ObservedObject private var mic = MicManager(numberOfSamples: 30)
     private var speechManager = SpeechManager()
@@ -41,6 +42,22 @@ struct Chat: View {
                 }
                 recordButton()
                     .padding(.bottom, 30)
+            }
+            
+            VStack {
+                Button(action: {controlModel.isShowingChat = false}) {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 40))
+                        .padding(.horizontal, 3)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .padding(.leading, 10)
+                .buttonStyle(.bordered)
+                .buttonBorderShape(.capsule)
+                .cornerRadius(20)
+                .tint(.black.opacity(1))
+                .padding()
+                .padding(.top, 10)
             }
         }
         .onAppear {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RoadMap: View {
+    @EnvironmentObject var controlModel: ViewControlModel
     var body: some View {
         ZStack {
             VStack {
@@ -18,7 +19,7 @@ struct RoadMap: View {
             }
             
             VStack {
-                Button(action: { }) {
+                Button(action: {controlModel.isShowingRoadmap = false}) {
                     Image(systemName: "xmark")
                         .font(.system(size: 40))
                         .padding(.horizontal, 3)

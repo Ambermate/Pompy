@@ -7,15 +7,19 @@
 
 import UIKit
 import SwiftUI
+import Firebase
 
 @main
 
 struct PompyApp: App {
-    
+    init() {
+        FirebaseApp.configure()
+    }
    // @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             ContentView().environmentObject(ViewModel())
+                .environmentObject(ViewControlModel())
                 .preferredColorScheme(.light)
         }
     }
