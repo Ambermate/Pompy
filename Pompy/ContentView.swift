@@ -12,7 +12,11 @@ import ARKit
 
 struct ContentView : View {
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            //ARViewContainer().edgesIgnoringSafeArea(.all)
+            Chat()
+            
+        }
     }
 }
 

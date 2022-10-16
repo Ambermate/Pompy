@@ -9,6 +9,18 @@ import UIKit
 import SwiftUI
 
 @main
+
+struct PompyApp: App {
+    
+   // @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    var body: some Scene {
+        WindowGroup {
+            ContentView().environmentObject(ViewModel())
+                .preferredColorScheme(.light)
+        }
+    }
+}
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
