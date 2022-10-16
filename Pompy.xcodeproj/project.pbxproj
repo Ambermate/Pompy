@@ -44,6 +44,10 @@
 		8F9021CB28FC0B9C00D8545F /* nature.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8F9021CA28FC0B9C00D8545F /* nature.usdz */; };
 		8F9021CD28FC0BAB00D8545F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9021CC28FC0BAB00D8545F /* MapView.swift */; };
 		8F9021CF28FC0BBA00D8545F /* NatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9021CE28FC0BBA00D8545F /* NatureView.swift */; };
+		8F9021D128FC119E00D8545F /* Calories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9021D028FC119E00D8545F /* Calories.swift */; };
+		8F9021D328FC177600D8545F /* pompy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F9021D228FC177600D8545F /* pompy.mp3 */; };
+		8F9021D528FC17C700D8545F /* chat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F9021D428FC17C700D8545F /* chat.mp3 */; };
+		8F9021D728FC19C100D8545F /* pitch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F9021D628FC19C100D8545F /* pitch.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +87,10 @@
 		8F9021CA28FC0B9C00D8545F /* nature.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = nature.usdz; sourceTree = "<group>"; };
 		8F9021CC28FC0BAB00D8545F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8F9021CE28FC0BBA00D8545F /* NatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NatureView.swift; sourceTree = "<group>"; };
+		8F9021D028FC119E00D8545F /* Calories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calories.swift; sourceTree = "<group>"; };
+		8F9021D228FC177600D8545F /* pompy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pompy.mp3; sourceTree = "<group>"; };
+		8F9021D428FC17C700D8545F /* chat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chat.mp3; sourceTree = "<group>"; };
+		8F9021D628FC19C100D8545F /* pitch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pitch.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8F90218728FB890C00D8545F /* Info.plist */,
+				8F9021B828FBF35A00D8545F /* GoogleService-Info.plist */,
 				8F9021B328FBE53400D8545F /* Audio */,
 				8F9021A728FBE24500D8545F /* Speech */,
 				8F9021A828FBE25C00D8545F /* Model */,
@@ -133,7 +142,6 @@
 				41F550E628FB7B1B001052C2 /* jump2.usdz */,
 				41F550E828FB7B1B001052C2 /* nodding.usdz */,
 				41F550D428FA5BDF001052C2 /* Assets.xcassets */,
-				8F9021B828FBF35A00D8545F /* GoogleService-Info.plist */,
 				41F550D628FA5BDF001052C2 /* Preview Content */,
 			);
 			path = Pompy;
@@ -193,6 +201,7 @@
 				8F90219A28FBBA0400D8545F /* RoadMap.swift */,
 				8F9021AC28FBE30800D8545F /* Camera.swift */,
 				8F90219228FBAB8600D8545F /* Gif.swift */,
+				8F9021D028FC119E00D8545F /* Calories.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -202,6 +211,9 @@
 			children = (
 				8F9021B128FBE52B00D8545F /* hello.mp3 */,
 				8F9021B628FBEA7000D8545F /* bonjour.mp3 */,
+				8F9021D428FC17C700D8545F /* chat.mp3 */,
+				8F9021D628FC19C100D8545F /* pitch.mp3 */,
+				8F9021D228FC177600D8545F /* pompy.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -281,9 +293,11 @@
 			files = (
 				41F550E928FB7B1B001052C2 /* jump2.usdz in Resources */,
 				8F90219928FBADDA00D8545F /* fluffy1.gif in Resources */,
+				8F9021D328FC177600D8545F /* pompy.mp3 in Resources */,
 				8F90219D28FBBF1D00D8545F /* fluffy.gif in Resources */,
 				8F9021B228FBE52B00D8545F /* hello.mp3 in Resources */,
 				8F9021CB28FC0B9C00D8545F /* nature.usdz in Resources */,
+				8F9021D528FC17C700D8545F /* chat.mp3 in Resources */,
 				8F9021B728FBEA7000D8545F /* bonjour.mp3 in Resources */,
 				8F90219128FBAB6F00D8545F /* fluffy2.gif in Resources */,
 				41F550EB28FB7B1B001052C2 /* nodding.usdz in Resources */,
@@ -291,6 +305,7 @@
 				41F550D528FA5BDF001052C2 /* Assets.xcassets in Resources */,
 				8F90219728FBADDA00D8545F /* fluffy4.gif in Resources */,
 				8F90219828FBADDA00D8545F /* fluffy3.gif in Resources */,
+				8F9021D728FC19C100D8545F /* pitch.mp3 in Resources */,
 				8F9021B928FBF35B00D8545F /* GoogleService-Info.plist in Resources */,
 				41F550EA28FB7B1B001052C2 /* jump1.usdz in Resources */,
 			);
@@ -313,6 +328,7 @@
 				8F90219328FBAB8600D8545F /* Gif.swift in Sources */,
 				8F9021AF28FBE39000D8545F /* Response.swift in Sources */,
 				8F9021A128FBBFF200D8545F /* SpeechRecognition.swift in Sources */,
+				8F9021D128FC119E00D8545F /* Calories.swift in Sources */,
 				8F9021A328FBD27600D8545F /* MicManager.swift in Sources */,
 				8F90218D28FBA16B00D8545F /* Home.swift in Sources */,
 				41F550D328FA5BDE001052C2 /* Experience.rcproject in Sources */,

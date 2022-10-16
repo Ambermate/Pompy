@@ -16,6 +16,8 @@ struct Chat: View {
     @State private var recording = false
     @ObservedObject private var mic = MicManager(numberOfSamples: 30)
     private var speechManager = SpeechManager()
+    @State var count = 0
+    let arr = ["bonjour", "pitch", "chat"]
     
     
     var body: some View {
@@ -32,13 +34,20 @@ struct Chat: View {
                 GifImage("fluffy")
                 
             }
+            .onTapGesture {
+                playSound(sound: arr[count], type: "mp3")
+                count = (count + 1) % 3
+            }
             
             VStack {
                 Spacer()
                 if viewModel.Dialog != "" {
                     Text(viewModel.Dialog)
+                        .font(.system(size: 40))
+                        .padding(.horizontal, 10)
                 } else {
                     Text("Hi, I'm Pompy")
+                        .font(.system(size: 20))
                 }
                 recordButton()
                     .padding(.bottom, 30)
@@ -92,7 +101,7 @@ struct Chat: View {
     private func recordButton() -> some View {
         Button(action: {
             Transcribing()
-            audioPlayer?.stop()
+            //audioPlayer?.stop()
         }) {
             Image(systemName: recording ? "stop.fill" : "mic.fill")
                 .font(.system(size: 40))

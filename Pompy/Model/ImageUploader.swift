@@ -5,14 +5,13 @@
 //  Created by Long Hai on 10/16/22.
 //
 
-import Foundation
 import Firebase
 import FirebaseStorage
 import UIKit
 
 struct ImageUploader {
     static func uploadImage(image: UIImage, location: String, filename: String, completion: @escaping(String) -> Void) {
-        guard let imageData = image.jpegData(compressionQuality: 0.4) else { return }
+        guard let imageData = image.jpegData(compressionQuality: 0.3) else { return }
 
         //let ref = Storage.storage().reference(withPath: "/\(location)/\(filename)")
         let ref = Storage.storage().reference(withPath: "/\(location)/\(filename)")

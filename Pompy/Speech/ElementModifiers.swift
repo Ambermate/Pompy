@@ -11,7 +11,7 @@ import SwiftUI
 struct Features: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .frame(width: 40, height: 40, alignment: .center)
+            .frame(width: 35, height: 35, alignment: .center)
             .padding()
             .background(Color.white)
             .cornerRadius(15)

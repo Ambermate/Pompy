@@ -28,6 +28,7 @@ struct Home: View {
             }
             .onTapGesture {
                 controlModel.isShowingPompy = true
+                playSound(sound: "pompy", type: "mp3")
             }
             
             VStack {
@@ -73,6 +74,7 @@ struct Home: View {
                 .padding(.bottom, 60)
 
             }
+            .padding(.horizontal, 5)
 
         }
         .fullScreenCover(isPresented: $controlModel.isShowingChat, onDismiss: {}) {

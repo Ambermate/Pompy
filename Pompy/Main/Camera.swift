@@ -20,26 +20,43 @@ struct Camera: View {
             VStack {
                 Image.init(uiImage: image).resizable()
                     .aspectRatio(contentMode: .fit)
+                    .cornerRadius(20)
+                    .padding(.horizontal, 20)
                 
-                Button(action: {
-                    self.iShown.toggle()
-                    self.sourceType = .camera
-                }) {
-                    Text("Camera")
-                }
-                //.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                .padding(.leading, 10)
-                .buttonStyle(.bordered)
-                .buttonBorderShape(.capsule)
-                .cornerRadius(20)
-                .tint(.black.opacity(1))
-                .padding()
-                .padding(.top, 10)
-                
-                Button(action: {
-                    viewModel.uploadMainImage(image, "image")
-                }) {
-                    Text("Analyze")
+                HStack {
+                    Button(action: {
+                        self.iShown.toggle()
+                        self.sourceType = .camera
+                    }) {
+                        Text("Camera")
+                            .font(.system(size: 25))
+                    }
+                    //.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .padding(.leading, 10)
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .cornerRadius(20)
+                    .tint(.yellow.opacity(1))
+                    .padding()
+                    .padding(.top, 10)
+                    
+                    Spacer().frame(width: 20)
+                    
+                    Button(action: {
+                        viewModel.uploadMainImage(image, "image")
+                        print("wsaasa\(image)")
+                        controlModel.isShowingAnalyze = true
+                    }) {
+                        Text("Analyze")
+                            .font(.system(size: 25))
+                    }
+                    .padding(.leading, 10)
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.capsule)
+                    .cornerRadius(20)
+                    .tint(.yellow.opacity(1))
+                    .padding()
+                    .padding(.top, 10)
                 }
             }
             .sheet(isPresented: $iShown) {
@@ -59,8 +76,11 @@ struct Camera: View {
                 .cornerRadius(20)
                 .tint(.black.opacity(1))
                 .padding()
-                .padding(.top, 10)
+                .padding(.top, 1)
             }
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingAnalyze, onDismiss: {}) {
+            Calories()
         }
     }
 }

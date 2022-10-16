@@ -15,5 +15,7 @@ class ViewControlModel: ObservableObject {
     @Published var isShowingRoadmap = false
     @Published var isShowingTree = false
     @Published var isShowingPompy = false
+    @Published var isShowingAnalyze = false
+    
     
 }
