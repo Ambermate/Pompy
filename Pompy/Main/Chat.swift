@@ -15,6 +15,8 @@ struct Chat: View {
     @State private var recording = false
     @ObservedObject private var mic = MicManager(numberOfSamples: 30)
     private var speechManager = SpeechManager()
+    
+    
     var body: some View {
         ZStack {
             VStack {
@@ -35,7 +37,7 @@ struct Chat: View {
                 if viewModel.Dialog != "" {
                     Text(viewModel.Dialog)
                 } else {
-                    Text("Hi")
+                    Text("Hi, I'm Pompy")
                 }
                 recordButton()
                     .padding(.bottom, 30)
@@ -43,7 +45,13 @@ struct Chat: View {
         }
         .onAppear {
             speechManager.checkPermissions()
+            playSound(sound: "hello", type: "mp3")
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+//                audioPlayer = nil
+//            }
+           //playSound(sound: "bonjour", type: "mp3")
         }
+        
     }
     private func Transcribing() {
         if speechManager.isRecording {
@@ -65,7 +73,10 @@ struct Chat: View {
         speechManager.isRecording.toggle()
     }
     private func recordButton() -> some View {
-        Button(action: { Transcribing() }) {
+        Button(action: {
+            Transcribing()
+            audioPlayer?.stop()
+        }) {
             Image(systemName: recording ? "stop.fill" : "mic.fill")
                 .font(.system(size: 40))
                 .padding()
