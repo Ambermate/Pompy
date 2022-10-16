@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41F550CB28FA5BDE001052C2 /* HackHarvard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackHarvard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F550CB28FA5BDE001052C2 /* Pompy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pompy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F550CE28FA5BDE001052C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F550D028FA5BDE001052C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41F550D228FA5BDE001052C2 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		41F550C228FA5BDE001052C2 = {
 			isa = PBXGroup;
 			children = (
-				41F550CD28FA5BDE001052C2 /* HackHarvard */,
+				41F550CD28FA5BDE001052C2 /* Pompy */,
 				41F550CC28FA5BDE001052C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,12 +51,12 @@
 		41F550CC28FA5BDE001052C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41F550CB28FA5BDE001052C2 /* HackHarvard.app */,
+				41F550CB28FA5BDE001052C2 /* Pompy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41F550CD28FA5BDE001052C2 /* HackHarvard */ = {
+		41F550CD28FA5BDE001052C2 /* Pompy */ = {
 			isa = PBXGroup;
 			children = (
 				41F550CE28FA5BDE001052C2 /* AppDelegate.swift */,
@@ -68,7 +68,7 @@
 				41F550E828FB7B1B001052C2 /* nodding.usdz */,
 				41F550D628FA5BDF001052C2 /* Preview Content */,
 			);
-			path = HackHarvard;
+			path = Pompy;
 			sourceTree = "<group>";
 		};
 		41F550D628FA5BDF001052C2 /* Preview Content */ = {
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41F550CA28FA5BDE001052C2 /* HackHarvard */ = {
+		41F550CA28FA5BDE001052C2 /* Pompy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41F550DB28FA5BDF001052C2 /* Build configuration list for PBXNativeTarget "HackHarvard" */;
+			buildConfigurationList = 41F550DB28FA5BDF001052C2 /* Build configuration list for PBXNativeTarget "Pompy" */;
 			buildPhases = (
 				41F550C728FA5BDE001052C2 /* Sources */,
 				41F550C828FA5BDE001052C2 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = HackHarvard;
+			name = Pompy;
 			productName = HackHarvard;
-			productReference = 41F550CB28FA5BDE001052C2 /* HackHarvard.app */;
+			productReference = 41F550CB28FA5BDE001052C2 /* Pompy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 41F550C628FA5BDE001052C2 /* Build configuration list for PBXProject "HackHarvard" */;
+			buildConfigurationList = 41F550C628FA5BDE001052C2 /* Build configuration list for PBXProject "Pompy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41F550CA28FA5BDE001052C2 /* HackHarvard */,
+				41F550CA28FA5BDE001052C2 /* Pompy */,
 			);
 		};
 /* End PBXProject section */
@@ -300,7 +300,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BL.HackHarvard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pompy;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,7 +332,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BL.HackHarvard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pompy;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41F550C628FA5BDE001052C2 /* Build configuration list for PBXProject "HackHarvard" */ = {
+		41F550C628FA5BDE001052C2 /* Build configuration list for PBXProject "Pompy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41F550D928FA5BDF001052C2 /* Debug */,
@@ -351,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41F550DB28FA5BDF001052C2 /* Build configuration list for PBXNativeTarget "HackHarvard" */ = {
+		41F550DB28FA5BDF001052C2 /* Build configuration list for PBXNativeTarget "Pompy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41F550DC28FA5BDF001052C2 /* Debug */,
