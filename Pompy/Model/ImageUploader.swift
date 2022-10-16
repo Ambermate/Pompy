@@ -15,7 +15,10 @@ struct ImageUploader {
 
         //let ref = Storage.storage().reference(withPath: "/\(location)/\(filename)")
         let ref = Storage.storage().reference(withPath: "/\(location)/\(filename)")
-        ref.putData(imageData, metadata: nil) { _, error in
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpeg"
+        ref.putData(imageData, metadata: metadata
+        ) { _, error in
             if let error = error {
                 print("DEBUG: Failed to upload image with error: \(error.localizedDescription)")
                 return

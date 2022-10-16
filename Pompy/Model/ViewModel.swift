@@ -29,7 +29,7 @@ class ViewModel: ObservableObject {
     //-- fetching User
     func fetchUser() {
         
-        let docRef = Firestore.firestore().collection("Demo").document("user1")
+        let docRef = Firestore.firestore().collection("User").document("Demo")
         
         docRef.addSnapshotListener { (document, error) in
             guard error == nil else {
@@ -42,7 +42,6 @@ class ViewModel: ObservableObject {
                 if let data = data {
                 
                     self.currentUser.imageURL = data["imageURL"] as? String ?? "image"
-
                 }
             }
         }
@@ -52,7 +51,7 @@ class ViewModel: ObservableObject {
         ImageUploader.uploadImage(image: image, location: location, filename: NSUUID().uuidString) { imageURL in
             Firestore.firestore().collection("User")
                 .document("Demo") //-- in the group id access
-                .updateData(["imageURL": imageURL]) { _ in
+                .setData(["imageURL": imageURL]) { _ in
                     //
                 }
         }

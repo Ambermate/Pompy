@@ -15,7 +15,12 @@ struct Camera: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @EnvironmentObject var viewModel: ViewModel
     @EnvironmentObject var controlModel: ViewControlModel
+    
+    @State private var name: String = "default"
+    @State private var cals: String = "cal"
+    
     var body: some View {
+        let user = viewModel.currentUser
         ZStack {
             VStack {
                 Image.init(uiImage: image).resizable()
@@ -45,7 +50,8 @@ struct Camera: View {
                     Button(action: {
                         viewModel.uploadMainImage(image, "image")
                         print("wsaasa\(image)")
-                        controlModel.isShowingAnalyze = true
+                        post(TestItem(sometext: user.imageURL), name: $name, cal: $cals)
+                        //controlModel.isShowingAnalyze = true
                     }) {
                         Text("Analyze")
                             .font(.system(size: 25))
@@ -58,7 +64,16 @@ struct Camera: View {
                     .padding()
                     .padding(.top, 10)
                 }
+                
+                VStack {
+                    Text(name)
+                        .font(.system(size: 30))
+                    
+                    Text(cals)
+                        .font(.system(size: 30))
+                }
             }
+            
             .sheet(isPresented: $iShown) {
                 //
                 Access(iShown: self.$iShown, myImage: self.$image, mySourceType: self.$sourceType)

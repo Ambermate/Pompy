@@ -48,6 +48,7 @@
 		8F9021D328FC177600D8545F /* pompy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F9021D228FC177600D8545F /* pompy.mp3 */; };
 		8F9021D528FC17C700D8545F /* chat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F9021D428FC17C700D8545F /* chat.mp3 */; };
 		8F9021D728FC19C100D8545F /* pitch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F9021D628FC19C100D8545F /* pitch.mp3 */; };
+		8F9021DA28FC309E00D8545F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9021D928FC309E00D8545F /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		8F9021D228FC177600D8545F /* pompy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pompy.mp3; sourceTree = "<group>"; };
 		8F9021D428FC17C700D8545F /* chat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chat.mp3; sourceTree = "<group>"; };
 		8F9021D628FC19C100D8545F /* pitch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pitch.mp3; sourceTree = "<group>"; };
+		8F9021D928FC309E00D8545F /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				8F9021B328FBE53400D8545F /* Audio */,
 				8F9021A728FBE24500D8545F /* Speech */,
 				8F9021A828FBE25C00D8545F /* Model */,
+				8F9021D828FC308800D8545F /* Analyzer */,
 				8F9021A928FBE27400D8545F /* Main */,
 				8F9021A628FBE22B00D8545F /* Gif */,
 				41F550CE28FA5BDE001052C2 /* AppDelegate.swift */,
@@ -223,6 +226,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F9021D828FC308800D8545F /* Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				8F9021D928FC309E00D8545F /* Request.swift */,
+			);
+			path = Analyzer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 				8F90218D28FBA16B00D8545F /* Home.swift in Sources */,
 				41F550D328FA5BDE001052C2 /* Experience.rcproject in Sources */,
 				8F9021AD28FBE30800D8545F /* Camera.swift in Sources */,
+				8F9021DA28FC309E00D8545F /* Request.swift in Sources */,
 				8F9021C928FC0B7300D8545F /* BasicPompiView.swift in Sources */,
 				8F9021C228FBF69D00D8545F /* DataStructure.swift in Sources */,
 				8F9021CD28FC0BAB00D8545F /* MapView.swift in Sources */,
