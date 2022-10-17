@@ -1,7 +1,7 @@
 # Pompi | Pompy
 
 
-##💡 Inspiration💡
+## 💡 Inspiration💡
 
 Our team is saddened by the fact that so many people think that COVID-19 is obsolete when the virus is still very much relevant and impactful to us. We recognize that there are still a lot of people around the world that are quarantining—which can be a very depressing situation to be in. We wanted to create some way for people in quarantine, now or in the future, to help them stay healthy both physically and mentally; and to do so in a fun way!
 
